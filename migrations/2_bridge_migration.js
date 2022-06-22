@@ -4,7 +4,7 @@ const BridgeEth = artifacts.require('BridgeEth.sol');
 const BridgeBsc = artifacts.require('BridgeBsc.sol');
 
 module.exports = async function (deployer, network, addresses) {
-  if (network === 'ethTestnet') {
+  if (network === 'ropsten') {
     await deployer.deploy(TokenEth);
     const tokenEth = await TokenEth.deployed();
     await tokenEth.mint(addresses[0], 1000);
