@@ -2,7 +2,7 @@
 pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "./Itoken.sol";
+import "./IToken.sol";
 
 contract BridgeBase {
     address public admin;
@@ -14,7 +14,7 @@ contract BridgeBase {
       Burn,
       Mint
     }
-    
+
     event Transfer(
         address from,
         address to,
