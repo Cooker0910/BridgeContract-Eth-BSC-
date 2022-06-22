@@ -7,11 +7,14 @@ import "./Itoken.sol";
 contract BridgeBase {
     address public admin;
     IToken public token;
+
     mapping(address => mapping(uint256 => bool)) public processedNonces;
+
     enum Step {
-        Burn,
-        Mint
+      Burn,
+      Mint
     }
+    
     event Transfer(
         address from,
         address to,
