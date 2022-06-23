@@ -1,8 +1,7 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.0;
 
-import "./TokenBase.sol";
+import './TokenBase.sol';
 
 contract TokenEth is TokenBase {
-  constructor() TokenBase("ETH Token", "ETK") {}
+  constructor() TokenBase('ETH Token', 'ETK') {}
 }

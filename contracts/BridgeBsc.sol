@@ -1,9 +1,7 @@
-// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-pragma solidity ^0.8.4;
-
-import "./BridgeBase.sol";
+import './BridgeBase.sol';
 
 contract BridgeBsc is BridgeBase {
-    constructor(address token) BridgeBase(token) {}
+  constructor(address token) BridgeBase(token) {}
 }
