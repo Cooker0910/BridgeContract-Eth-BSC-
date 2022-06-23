@@ -79,7 +79,7 @@ contract BridgeBase {
       signature,
       Step.Mint
     );
-  }
+  }b        
 
   function prefixed(bytes32 hash) internal pure returns (bytes32) {
     return
