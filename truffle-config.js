@@ -1,5 +1,4 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const mnemonic = 'enemy bulb hotel leave lens quote decrease thunder silent film father man';
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -25,6 +24,7 @@ const mnemonic = 'enemy bulb hotel leave lens quote decrease thunder silent film
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
+require('dotenv').config()
 
 module.exports = {
   /**
@@ -62,7 +62,7 @@ module.exports = {
     // NB: It's important to wrap the provider as a function.
     ethTestnet: {
       provider: () => new HDWalletProvider(
-        mnemonic, 
+        process.env.mnemonic, 
         'https://rinkeby.infura.io/v3/0e42c582d71b4ba5a8750f688fce07da',
         0,
         1
@@ -72,7 +72,7 @@ module.exports = {
     },
     bscTestnet: {
       provider: () => new HDWalletProvider(
-        mnemonic, 
+        process.env.mnemonic, 
         'https://data-seed-prebsc-1-s1.binance.org:8545'
       ),
       network_id: 97,
