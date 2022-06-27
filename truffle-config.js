@@ -1,4 +1,3 @@
-const HDWalletProvider = require('@truffle/hdwallet-provider');
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -19,7 +18,7 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
