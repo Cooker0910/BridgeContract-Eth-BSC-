@@ -13,10 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.0.0-beta.0",
-    "@truffle/hdwallet-provider": "^1.2.3",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@truffle/hdwallet-provider": "^2.0.9",
     "dotenv": "^16.0.1",
-    "web3": "^1.3.4"
+    "web3": "^1.7.4"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
     "url": "https://github.com/Cooker0910/BridgeContract-Eth-BSC-/issues"
   },
   "homepage": "https://github.com/Cooker0910/BridgeContract-Eth-BSC-#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
 }
